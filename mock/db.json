@@ -1,0 +1,265 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@event.com",
+      "password": "Admin@123",
+      "name": "Admin User",
+      "role": "admin"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Rahul Mehta",
+      "mobile": "9876543219",
+      "email": "rahul.mehta@example.com",
+      "projectName": "Skyline Towers",
+      "qrCode": "QR-C1-001",
+      "qrUsed": true,
+      "eventStatus": "Assigned",
+      "assignedBooth": "B-03",
+      "createdAt": "2026-06-28T09:15:00Z",
+      "id": "c1"
+    },
+    {
+      "id": "c2",
+      "name": "Priya Sharma",
+      "mobile": "9123456780",
+      "email": "priya.sharma@example.com",
+      "projectName": "Green Meadows",
+      "qrCode": "QR-C2-002",
+      "qrUsed": true,
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "createdAt": "2026-06-28T09:20:00Z"
+    },
+    {
+      "id": "c3",
+      "name": "Amit Verma",
+      "mobile": "9988776655",
+      "email": "amit.verma@example.com",
+      "projectName": "Lakeview Residency",
+      "qrCode": "QR-C3-003",
+      "qrUsed": true,
+      "eventStatus": "Assigned",
+      "assignedBooth": "B-04",
+      "createdAt": "2026-06-28T09:25:00Z"
+    },
+    {
+      "id": "c4",
+      "name": "Sneha Iyer",
+      "mobile": "9012345678",
+      "email": "sneha.iyer@example.com",
+      "projectName": "Skyline Towers",
+      "qrCode": "QR-C4-004",
+      "qrUsed": true,
+      "eventStatus": "Completed",
+      "assignedBooth": "B-01",
+      "createdAt": "2026-06-28T09:30:00Z"
+    },
+    {
+      "id": "c5",
+      "name": "Karan Malhotra",
+      "mobile": "9765432109",
+      "email": "karan.malhotra@example.com",
+      "projectName": "Green Meadows",
+      "qrCode": "QR-C5-005",
+      "qrUsed": false,
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "createdAt": "2026-06-28T09:35:00Z"
+    },
+    {
+      "name": "Gautam Dutta",
+      "mobile": "9330492892",
+      "email": "gautam.dutta@gmail.com",
+      "projectName": "Ticket-Management-Lite",
+      "qrCode": "QR-1782890954865",
+      "qrUsed": false,
+      "eventStatus": "In Discussion",
+      "assignedBooth": null,
+      "createdAt": "2026-07-01T07:29:14.865Z",
+      "id": "kcmX8q8"
+    },
+    {
+      "name": "Snehasish Bose",
+      "mobile": "9874787484",
+      "email": "bose.s@gmail.com",
+      "projectName": "Infrastructure Development",
+      "qrCode": "QR-1782891489790",
+      "qrUsed": false,
+      "eventStatus": "Follow-Up Required",
+      "assignedBooth": null,
+      "createdAt": "2026-07-01T07:38:09.790Z",
+      "id": "OWhbNAq"
+    },
+    {
+      "name": "Abhishek Karmakar",
+      "mobile": "8981955992",
+      "email": "a.karmakar@gmail.com",
+      "projectName": "Warehouse detailing.",
+      "qrCode": "QR-1782891618936",
+      "qrUsed": false,
+      "eventStatus": "Assigned",
+      "assignedBooth": "B-01",
+      "createdAt": "2026-07-01T07:40:18.936Z",
+      "id": "0lHl5G1"
+    },
+    {
+      "name": "Tuli Ghosh",
+      "mobile": "9835293930",
+      "email": "tuli.ghosh123@gmail.com",
+      "projectName": "Automobile detailing.",
+      "qrCode": "QR-1782891733085",
+      "qrUsed": false,
+      "eventStatus": "Not Interested",
+      "assignedBooth": null,
+      "createdAt": "2026-07-01T07:42:13.085Z",
+      "id": "FkxXl4u"
+    }
+  ],
+  "booths": [
+    {
+      "id": "B-01",
+      "boothNumber": "B-01",
+      "capacity": 1,
+      "isActive": true
+    },
+    {
+      "id": "B-02",
+      "boothNumber": "B-02",
+      "capacity": 1,
+      "isActive": true
+    },
+    {
+      "id": "B-03",
+      "boothNumber": "B-03",
+      "capacity": 1,
+      "isActive": true
+    },
+    {
+      "id": "B-04",
+      "boothNumber": "B-04",
+      "capacity": 1,
+      "isActive": true
+    },
+    {
+      "id": "B-05",
+      "boothNumber": "B-05",
+      "capacity": 1,
+      "isActive": true
+    }
+  ],
+  "boothAssignments": [
+    {
+      "id": "ba1",
+      "customerId": "c1",
+      "customerName": "Rahul Mehta",
+      "boothNumber": "B-03",
+      "salesManagerName": "Vikram Singh",
+      "status": "Assigned",
+      "createdAt": "2026-06-28T10:00:00Z"
+    },
+    {
+      "id": "ba2",
+      "customerId": "c4",
+      "customerName": "Sneha Iyer",
+      "boothNumber": "B-01",
+      "salesManagerName": "Anjali Rao",
+      "status": "Completed",
+      "createdAt": "2026-06-28T09:50:00Z"
+    },
+    {
+      "customerId": "c3",
+      "boothNumber": "B-04",
+      "salesManagerName": "Vikram Singh",
+      "status": "In Discussion",
+      "customerName": "Amit Verma",
+      "createdAt": "2026-07-01T07:29:58.358Z",
+      "id": "7FedJRg"
+    },
+    {
+      "customerId": "0lHl5G1",
+      "boothNumber": "B-01",
+      "salesManagerName": "Vikalp Yadav",
+      "status": "In Discussion",
+      "customerName": "Abhishek Karmakar",
+      "createdAt": "2026-07-01T11:50:22.436Z",
+      "id": "KAhkwC_"
+    }
+  ],
+  "customerStatusHistory": [
+    {
+      "id": "h1",
+      "customerId": "c1",
+      "status": "Waiting",
+      "remarks": "Registered at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-06-28T09:15:00Z"
+    },
+    {
+      "id": "h2",
+      "customerId": "c1",
+      "status": "Checked-In",
+      "remarks": "QR verified",
+      "followUpDate": null,
+      "updatedAt": "2026-06-28T09:40:00Z"
+    },
+    {
+      "id": "h3",
+      "customerId": "c1",
+      "status": "Assigned",
+      "remarks": "Assigned to booth B-03",
+      "followUpDate": null,
+      "updatedAt": "2026-06-28T10:00:00Z"
+    },
+    {
+      "id": "h4",
+      "customerId": "c4",
+      "status": "Completed",
+      "remarks": "Deal closed",
+      "followUpDate": null,
+      "updatedAt": "2026-06-28T11:00:00Z"
+    },
+    {
+      "id": "h1782891381308",
+      "customerId": "kcmX8q8",
+      "status": "In Discussion",
+      "remarks": "Discussed",
+      "followUpDate": null,
+      "updatedAt": "2026-07-01T07:36:21.308Z"
+    },
+    {
+      "id": "h1782891525861",
+      "customerId": "OWhbNAq",
+      "status": "Follow-Up Required",
+      "remarks": "Need to have a proper follow up on the required.",
+      "followUpDate": "2026-07-07",
+      "updatedAt": "2026-07-01T07:38:45.861Z"
+    },
+    {
+      "id": "h1782891657955",
+      "customerId": "0lHl5G1",
+      "status": "Checked-In",
+      "remarks": "",
+      "followUpDate": null,
+      "updatedAt": "2026-07-01T07:40:57.955Z"
+    },
+    {
+      "id": "h1782891768844",
+      "customerId": "FkxXl4u",
+      "status": "Not Interested",
+      "remarks": "The person is not interested anymore.",
+      "followUpDate": null,
+      "updatedAt": "2026-07-01T07:42:48.844Z"
+    },
+    {
+      "id": "h1782906559386",
+      "customerId": "c2",
+      "status": "Checked-In",
+      "remarks": "Checked in via QR scan",
+      "followUpDate": null,
+      "updatedAt": "2026-07-01T11:49:19.386Z"
+    }
+  ]
+}
