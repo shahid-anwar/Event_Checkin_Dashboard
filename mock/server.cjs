@@ -7,7 +7,11 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
-
+server.use(
+  cors({
+    origin: "*",
+  }),
+);
 // ---- AUTH ----
 server.post("/api/login", (req, res) => {
   const { email, password } = req.body;
