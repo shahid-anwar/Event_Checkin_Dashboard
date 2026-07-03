@@ -2,6 +2,12 @@
 
 A ReactJS web application to manage event customer check-ins, QR code verification, booth assignment, and customer status updates.
 
+## Live Demo
+
+- **Frontend**: https://event-checkin-dashboard-1achgbcff-shahid-anwars-projects.vercel.app
+- **Backend API**: https://event-checkin-dashboard-api-zx15.onrender.com/api
+- **GitHub**: https://github.com/shahid-anwar/Event_Checkin_Dashboard
+
 ## Tech Stack
 
 - **React 18 + Vite** — UI framework
@@ -17,8 +23,8 @@ A ReactJS web application to manage event customer check-ins, QR code verificati
 ## Setup
 
 ```bash
-git clone <repo-url>
-cd checkin-dashboard
+git clone https://github.com/shahid-anwar/Event_Checkin_Dashboard.git
+cd Event_Checkin_Dashboard
 npm install
 npm run dev          # starts mock API on :4000 AND vite on :5173
 ```
@@ -32,7 +38,7 @@ Open http://localhost:5173
 | Email    | admin@event.com |
 | Password | Admin@123       |
 
-## API Endpoints (mock server at :4000/api)
+## API Endpoints (mock server)
 
 | Method | Endpoint                         | Description          |
 |--------|----------------------------------|----------------------|
@@ -61,10 +67,32 @@ Open http://localhost:5173
 | react-hook-form  | Form state + submission     |
 | zod              | Schema validation           |
 
-## Demo QR Codes (manual entry)
+## Demo QR Codes (manual entry on QR Scan page)
 
-| QR Code     | Customer        | Status         |
-|-------------|-----------------|----------------|
-| QR-C2-002   | Priya Sharma    | Waiting (ready)|
-| QR-C5-005   | Karan Malhotra  | Waiting (ready)|
-| QR-C1-001   | Rahul Mehta     | Already used   |
+| QR Code     | Customer        | Status          |
+|-------------|-----------------|-----------------|
+| QR-C2-002   | Priya Sharma    | Waiting (ready) |
+| QR-C5-005   | Karan Malhotra  | Waiting (ready) |
+| QR-C1-001   | Rahul Mehta     | Already used    |
+
+## Project Structure
+
+```
+src/
+├── api/              # RTK Query API slices
+├── components/       # Shared UI components
+├── features/
+│   ├── auth/         # Login page
+│   ├── dashboard/    # Summary cards + charts
+│   ├── customers/    # CRUD table + modals
+│   ├── qrScanner/    # Camera scan + check-in
+│   ├── boothAssignment/ # Assignment management
+│   └── customerStatus/  # Status update + history
+├── routes/           # Protected route wrapper
+├── store/            # Redux store + auth slice
+├── App.jsx
+└── main.jsx
+mock/
+├── db.json           # Seed data
+└── server.cjs        # Custom json-server with business logic
+```
